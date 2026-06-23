@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinancePro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>FinancePro</h1></header>
+
+<section class="cards">
+<div class="card"><h3>Receitas</h3><span id="receitas">R$ 0,00</span></div>
+<div class="card"><h3>Despesas</h3><span id="despesas">R$ 0,00</span></div>
+<div class="card"><h3>Lucro</h3><span id="lucro">R$ 0,00</span></div>
+</section>
+
+<section class="form">
+<input id="desc" placeholder="Descrição">
+<input id="valor" type="number" placeholder="Valor">
+<select id="tipo">
+<option value="receita">Receita</option>
+<option value="despesa">Despesa</option>
+</select>
+<button onclick="adicionar()">Adicionar</button>
+</section>
+
+<h2>Transações</h2>
+<table>
+<thead><tr><th>Descrição</th><th>Tipo</th><th>Valor</th><th>Ação</th></tr></thead>
+<tbody id="lista"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
